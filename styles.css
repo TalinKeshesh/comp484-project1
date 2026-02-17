@@ -1,5 +1,9 @@
-* { box-sizing: border-box; }
+/* Global box sizing so layouts are easier to control */
+* {
+  box-sizing: border-box;
+}
 
+/* Base page styling: dark theme, font, default text color */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,21 +12,25 @@ body {
   line-height: 1.6;
 }
 
+/* Centers content and limits max width */
 .container {
   width: min(900px, 92%);
   margin: 0 auto;
 }
 
+/* Header section styling */
 header {
   border-bottom: 1px solid #fff;
   padding: 16px 0;
 }
 
+/* Main site title (h1) */
 .site-title {
   margin: 0;
   font-size: 24px;
 }
 
+/* Top navigation layout */
 nav {
   margin-top: 10px;
   display: flex;
@@ -30,6 +38,7 @@ nav {
   gap: 10px;
 }
 
+/* Navigation link styling (button-like links) */
 nav a {
   color: #fff;
   text-decoration: none;
@@ -38,34 +47,42 @@ nav a {
   font-size: 14px;
 }
 
+/* Nav hover effect */
 nav a:hover {
   background: #fff;
   color: #000;
 }
 
+/* Active/current page tab style */
 nav a.active {
   background: #fff;
   color: #000;
 }
 
+/* Main content spacing */
 main {
   padding: 24px 0;
 }
 
-h1, h2 {
+/* Heading spacing cleanup */
+h1,
+h2 {
   margin-top: 0;
 }
 
+/* Standard section block styling + divider line */
 .section {
   margin: 22px 0;
   padding-bottom: 18px;
   border-bottom: 1px solid #fff;
 }
 
+/* Default list indentation */
 ul {
   padding-left: 18px;
 }
 
+/* Footer base styling */
 footer {
   border-top: 1px solid #fff;
   padding: 16px 0;
@@ -73,6 +90,7 @@ footer {
   font-size: 14px;
 }
 
+/* Footer class styling (more specific footer formatting) */
 .site-footer {
   border-top: 1px solid #fff;
   padding: 16px 0;
@@ -80,6 +98,7 @@ footer {
   font-size: 14px;
 }
 
+/* Footer link styling */
 .site-footer a,
 .site-footer a:link,
 .site-footer a:visited {
@@ -88,6 +107,7 @@ footer {
   text-underline-offset: 3px;
 }
 
+/* Footer link hover/focus effect */
 .site-footer a:hover,
 .site-footer a:focus {
   background: #fff;
@@ -95,57 +115,65 @@ footer {
   text-decoration: none;
 }
 
+/* Small print text inside footer */
 .site-footer .small {
   margin: 6px 0 0;
   font-size: 12px;
 }
 
-/* Side video banners (left + right) */
+/* CSS variable used for left/right side banner width */
 :root {
-  --banner-width: 120px; /* adjust: 80px, 120px, 160px, etc. */
+  --banner-width: 120px;
 }
 
-/* fixed columns on both sides */
+/* Shared styling for the fixed side video banners */
 .side-banner {
   position: fixed;
   top: 0;
   height: 100vh;
   width: var(--banner-width);
   overflow: hidden;
-  z-index: 0;           /* keep behind your content */
+  z-index: 0;
   background: #000;
 }
 
+/* Left-side banner placement + divider */
 .side-banner.left {
   left: 0;
   border-right: 1px solid #fff;
 }
 
+/* Right-side banner placement + divider */
 .side-banner.right {
   right: 0;
   border-left: 1px solid #fff;
 }
 
-/* make the video fill the tall column */
+/* Makes banner video fill the full banner area */
 .side-banner video {
   width: 100%;
   height: 100%;
-  object-fit: cover;    /* fills the banner */
+  object-fit: cover;
   display: block;
 }
 
-header, main, footer {
+/* Pushes content inward so it doesn't sit under the side banners */
+header,
+main,
+footer {
   position: relative;
   z-index: 1;
   margin-left: var(--banner-width);
   margin-right: var(--banner-width);
 }
 
+/* Tracklist (removes bullets/indent) */
 .tracklist {
   list-style: none;
   padding-left: 0;
 }
 
+/* Tracklist item row layout */
 .tracklist li {
   display: flex;
   align-items: center;
@@ -153,10 +181,12 @@ header, main, footer {
   padding: 8px 0;
 }
 
+/* Spacing after the song title */
 .song-title {
-  margin-right: 6px; /* a little space before icons */
+  margin-right: 6px;
 }
 
+/* Small icon sizing */
 .icon {
   width: 18px;
   height: 18px;
@@ -164,11 +194,13 @@ header, main, footer {
   display: inline-block;
 }
 
+/* Tracklist container again (duplicate rule kept as-is) */
 .tracklist {
   list-style: none;
   padding-left: 0;
 }
 
+/* Alternate track row styling for elements using class="track" */
 .tracklist .track {
   display: flex;
   align-items: center;
@@ -176,6 +208,7 @@ header, main, footer {
   padding: 8px 0;
 }
 
+/* Audio button styling (outlined icon button) */
 .audio-btn {
   background: transparent;
   border: 1px solid #fff;
@@ -183,24 +216,27 @@ header, main, footer {
   cursor: pointer;
 }
 
+/* Audio button hover/focus feedback */
 .audio-btn:hover,
 .audio-btn:focus {
   background: #fff;
 }
 
+/* Invert icon when button background is white */
 .audio-btn:hover img,
 .audio-btn:focus img {
   filter: invert(1);
 }
 
+/* Audio icon sizing */
 .audio-btn img {
   width: 18px;
   height: 18px;
   display: block;
 }
 
-/* Make play/pause buttons look like plain icons */
-.icon-btn{
+/* Plain icon button (no border/background) */
+.icon-btn {
   background: transparent;
   border: none;
   padding: 0;
@@ -209,47 +245,53 @@ header, main, footer {
   line-height: 0;
 }
 
-.icon-btn img{
+/* Icon sizing for icon buttons */
+.icon-btn img {
   width: 18px;
   height: 18px;
   display: block;
 }
 
-/* Optional: show a focus ring for keyboard users */
-.icon-btn:focus{
+/* Visible focus outline for keyboard navigation */
+.icon-btn:focus {
   outline: 1px solid #fff;
   outline-offset: 3px;
 }
 
-.tracklist-item{
+/* Track highlight template row layout */
+.tracklist-item {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0;
 }
 
-.gallery{
+/* Photo gallery grid layout */
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 14px;
   margin-top: 12px;
 }
 
-.gallery img{
+/* Gallery image sizing/cropping and border */
+.gallery img {
   width: 100%;
-  height: 160px;     /* makes them uniform */
-  object-fit: cover; /* crops nicely */
+  height: 160px;
+  object-fit: cover;
   border: 1px solid #fff;
 }
 
+/* Footer links row layout (side-by-side, wraps on small screens) */
 .footer-links {
   display: flex;
-  justify-content: center; /* or space-between */
-  gap: 40px;               /* space between the two items */
+  justify-content: center;
+  gap: 40px;
   align-items: center;
-  flex-wrap: wrap;         /* lets it stack on small screens */
+  flex-wrap: wrap;
 }
 
+/* Remove default spacing so footer link rows align neatly */
 .footer-links p {
-  margin: 0;               /* remove default paragraph spacing */
+  margin: 0;
 }
