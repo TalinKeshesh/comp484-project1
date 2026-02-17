@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Linkin Park — Origins</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Closest I can get to sync these two attributes with only html as a link to an external site -->
+  <link rel="preconnect" href="https://d2cstorage-a.akamaihd.net">
+  <link rel="preload" as="video" href="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
 </head>
 <body>
 
     <!-- Left + Right video side banners -->
 <div class="side-banners" aria-hidden="true">
   <div class="side-banner left">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="auto" poster="">
       <source src="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
     </video>
   </div>
 
   <div class="side-banner right">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="auto" poster="">
       <source src="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
     </video>
   </div>
