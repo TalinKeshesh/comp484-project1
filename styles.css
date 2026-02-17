@@ -140,3 +140,90 @@ header, main, footer {
   margin-left: var(--banner-width);
   margin-right: var(--banner-width);
 }
+
+.tracklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tracklist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.song-title {
+  margin-right: 6px; /* a little space before icons */
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.tracklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tracklist .track {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.audio-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.audio-btn:hover,
+.audio-btn:focus {
+  background: #fff;
+}
+
+.audio-btn:hover img,
+.audio-btn:focus img {
+  filter: invert(1);
+}
+
+.audio-btn img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Make play/pause buttons look like plain icons */
+.icon-btn{
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 8px;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.icon-btn img{
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Optional: show a focus ring for keyboard users */
+.icon-btn:focus{
+  outline: 1px solid #fff;
+  outline-offset: 3px;
+}
+
+.tracklist-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
