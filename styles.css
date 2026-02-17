@@ -241,3 +241,15 @@ header, main, footer {
   object-fit: cover; /* crops nicely */
   border: 1px solid #fff;
 }
+
+.footer-links {
+  display: flex;
+  justify-content: center; /* or space-between */
+  gap: 40px;               /* space between the two items */
+  align-items: center;
+  flex-wrap: wrap;         /* lets it stack on small screens */
+}
+
+.footer-links p {
+  margin: 0;               /* remove default paragraph spacing */
+}
