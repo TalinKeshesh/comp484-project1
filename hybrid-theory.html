@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,99 +9,101 @@
     <link rel="preload" as="video" href="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
     <!-- Left + Right video side banners -->
     <div class="side-banners" aria-hidden="true">
-    <div class="side-banner left">
-    <video autoplay muted loop playsinline preload="auto" poster="">
-        <source src="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
-    </video>
+        <div class="side-banner left">
+            <video autoplay muted loop playsinline preload="auto" poster="">
+                <source src="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="side-banner right">
+            <video autoplay muted loop playsinline preload="auto" poster="">
+                <source src="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 
-    <div class="side-banner right">
-    <video autoplay muted loop playsinline preload="auto" poster="">
-        <source src="https://d2cstorage-a.akamaihd.net/wr/linkinpark/js87j2jhss.mp4" type="video/mp4">
-    </video>
-    </div>
-</div>
+    <header>
+        <div class="container">
+            <h1 class="site-title">Linkin Park — History</h1>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="origins.html">Origins</a>
+                <a class="active" href="hybrid-theory.html">Hybrid Theory</a>
+                <a href="evolution.html">Evolution</a>
+                <a href="legacy.html">Legacy</a>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <div class="container">
-    <h1 class="site-title">Linkin Park — History</h1>
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="origins.html">Origins</a>
-        <a class="active" href="hybrid-theory.html">Hybrid Theory</a>
-        <a href="evolution.html">Evolution</a>
-        <a href="legacy.html">Legacy</a>
-    </nav>
-    </div>
-</header>
+    <main class="container">
+        <section class="section">
+            <h2>The Breakthrough: <em>Hybrid Theory</em></h2>
+            <p>
+                This page covers the album era that launched Linkin Park into worldwide recognition.
+            </p>
+        </section>
 
-<main class="container">
-<section class="section">
-    <h2>The Breakthrough: <em>Hybrid Theory</em></h2>
-    <p>
-        This page covers the album era that launched Linkin Park into worldwide recognition.
-    </p>
-</section>
+        <section class="section">
+            <h2>What to talk about</h2>
+            <ul>
+                <li>What made the sound unique (rock + rap + electronic elements)</li>
+                <li>Popular songs and why they connected with fans</li>
+                <li>Impact on rock music in the early 2000s</li>
+            </ul>
+        </section>
 
-<section class="section">
-    <h2>What to talk about</h2>
-    <ul>
-        <li>What made the sound unique (rock + rap + electronic elements)</li>
-        <li>Popular songs and why they connected with fans</li>
-        <li>Impact on rock music in the early 2000s</li>
-    </ul>
-</section>
+        <section class="section">
+            <h2>Track highlight template</h2>
+            <script src="audio.js" defer></script> <!-- use audio.js for the audio controls -->
+            <ul>
+                <li class="tracklist-item">
+                    <span class="song-title"><strong>Song:</strong> In the End</span>
+                    <audio class="audio" src="audio/in-the-end.mp3"></audio> <!-- Turns the images into play and pause buttons and plays the correct mp3 asociated with it -->
+                    <button class="icon-btn play" type="button" aria-label="Play In the End">
+                        <img class="icon" src="images/play.png" alt="">
+                    </button>
+                    <button class="icon-btn pause" type="button" aria-label="Pause In the End">
+                        <img class="icon" src="images/pause.png" alt="">
+                    </button>
+                </li>
 
-<section class="section">
-    <h2>Track highlight template</h2>
-    <script src="audio.js" defer></script>  <!-- use audio.js for the audio controls -->
-    <ul>
-        <li class="tracklist-item">
-        <span class="song-title"><strong>Song:</strong> In the End</span>
-        <audio class="audio" src="audio/in-the-end.mp3"></audio>    <!-- Turns the images into play and pause buttons and plays the correct mp3 asociated with it -->
-        <button class="icon-btn play" type="button" aria-label="Play In the End">
-            <img class="icon" src="images/play.png" alt="">
-        </button>
-        <button class="icon-btn pause" type="button" aria-label="Pause In the End">
-            <img class="icon" src="images/pause.png" alt="">
-        </button>
-        </li>
+                <li class="tracklist-item">
+                    <span class="song-title"><strong>Song:</strong> Crawling</span>
+                    <audio class="audio" src="audio/crawling.mp3"></audio>
+                    <button class="icon-btn play" type="button" aria-label="Play Crawling">
+                        <img class="icon" src="images/play.png" alt="">
+                    </button>
+                    <button class="icon-btn pause" type="button" aria-label="Pause Crawling">
+                        <img class="icon" src="images/pause.png" alt="">
+                    </button>
+                </li>
 
-        <li class="tracklist-item">
-        <span class="song-title"><strong>Song:</strong> Crawling</span>
-        <audio class="audio" src="audio/crawling.mp3"></audio>
-        <button class="icon-btn play" type="button" aria-label="Play Crawling">
-            <img class="icon" src="images/play.png" alt="">
-        </button>
-        <button class="icon-btn pause" type="button" aria-label="Pause Crawling">
-            <img class="icon" src="images/pause.png" alt="">
-        </button>
-        </li>
+                <li class="tracklist-item">
+                    <span class="song-title"><strong>Song:</strong> Papercut</span>
+                    <audio class="audio" src="audio/papercut.mp3"></audio>
+                    <button class="icon-btn play" type="button" aria-label="Play Papercut">
+                        <img class="icon" src="images/play.png" alt="">
+                    </button>
+                    <button class="icon-btn pause" type="button" aria-label="Pause Papercut">
+                        <img class="icon" src="images/pause.png" alt="">
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-        <li class="tracklist-item">
-        <span class="song-title"><strong>Song:</strong> Papercut</span>
-        <audio class="audio" src="audio/papercut.mp3"></audio>
-        <button class="icon-btn play" type="button" aria-label="Play Papercut">
-            <img class="icon" src="images/play.png" alt="">
-        </button>
-        <button class="icon-btn pause" type="button" aria-label="Pause Papercut">
-            <img class="icon" src="images/pause.png" alt="">
-        </button>
-        </li>
-    </ul>
-</section>
-</main>
-
-<footer class="site-footer">
-<div class="container">
-    <p>
-        Official website: <a href="https://linkinpark.com/" target="_blank" rel="noopener noreferrer">linkinpark.com</a>
-    </p>
-</div>
-</footer>
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Official website: <a href="https://linkinpark.com/" target="_blank" rel="noopener noreferrer">linkinpark.com</a>
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
